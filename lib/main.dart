@@ -185,4 +185,22 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
     );
   }
+
+  @override
+  Widget build(BuildContext context){
+    return column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        TextField(
+          controller: _messageCtrl,
+          decoration: const InputDecoration(
+            labelText: "Enter your message",
+
+          ),
+        ),
+      ]
+    )
+    }
+  }
+
 }
